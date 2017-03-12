@@ -6,11 +6,11 @@ import './body.html';
 
 Template.body.helpers({
 	tasks() {
-		return Tasks.find({});
+		return Tasks.find({}, { sort: { createdAt: -1} });
 	},
 });
 
-TEmplate.body.events ({
+Template.body.events ({
 	'submit .new-task' (event) {
 		event.preventDefault();
 
