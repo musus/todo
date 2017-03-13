@@ -9,6 +9,12 @@
 
 			{{> loginButtons}}
 
+			{{#if currentUser}}
+				<form action="" class="new-task">
+					<input type="text" name="text" placeholder="タスクを追加してください">
+				</form>
+			{{/if}}
+
 			<form action="" class="new-task">
 				<input type="text" name="text" placeholder="タスクを追加する">
 			</form>
