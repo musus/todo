@@ -34,7 +34,7 @@ Template.body.events ({
 		Tasks.insert({
 			text,
 			createdAt: new Date(),
-			owner: Meteor.userID(),
+			owner: Meteor.userId(),
 			username: Meteor.user().username,
 		});
 
