@@ -31,7 +31,7 @@ Template.body.events ({
 		const target = event.target;
 		const text = target.text.value;
 
-		Meteor.call('tasks.insert',text);
+		Meteor.call('tasks.insert', text);
 
 		target.text.value = "";
 	},
